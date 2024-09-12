@@ -5,6 +5,7 @@
     GitHub: Uma plataforma baseada na web que hospeda repositórios Git, facilitando a colaboração e o compartilhamento de código.
     
     Links diversos
+    Manual original: https://git-scm.com/docs/user-manual.html
     Manual git em português produzido coletivamente: https://git-na-pratica.gitbooks.io/git-na-pratica/content/
     Formatação padrão Markdown (http://daringfireball.net/projects/markdown/syntax);
 
