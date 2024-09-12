@@ -46,11 +46,18 @@
     Salva as mudanças locais no repositório
         git commit -a -m "Mensagem explicando a mudança"
 
-### BRANCHES - CHECKOUT - MERGE - RESET - REFLOG - LOG - PUSH - PULL:
+### BRANCHES - CHECKOUT - MERGE - RESET - REFLOG - LOG - PUSH - FETCH - PULL:
+    verifica as branch existentes
+        git branch
     Para criar uma nova branch
         git branch nome-da-branch
     Para mudar de branch
         git checkout nome-da-branch
+    Serve para deletar a brench
+        git branch -d <NomeDaBrench>
+        git branch --delete <NomeDaBrench>
+    Aqui vc irá navegar entre as branchs
+        git checkout <NomeDaBranch>
     Para criar e trocar de branch ao mesmo tempo
         git checkout -b nome-da-branch
     Para mesclar as mudanças de outra branch para a branch atual
@@ -68,6 +75,8 @@
     Para enviar suas mudanças locais (main/BRANCH) para o repositório no GitHub (main)
         git push
         git push -u origin nome-da-branch
+    Verificar na repo github se existe alguma branch nova
+        git fetch -a
     Para baixar as mudanças do repositório remoto
         git pull
         git pull origin nome-da-branch
