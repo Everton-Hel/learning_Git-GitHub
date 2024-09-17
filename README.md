@@ -1,7 +1,7 @@
 # Manual de Git + GitHub (Pratico e Rápido)
 
-### Menu Rapido
-[Topo](#manual-de-git--github-pratico-e-rápido) | [0. Ações rápidas](#0-ações-rápidas) | [1. O que é Git e GitHub](#1-o-que-é-git-e-github) | [2. Instalação do Git](#2-instalação-do-git) | [3. Configuração Inicial do Git](#3-configuração-inicial-do-git) | [4. Comandos do Git](#4-comandos-do-git) | [5. Comandos do Markdown](5-comandos-do-markdown) | [6. Dicas úteis](#6-dicas-úteis)
+### Menu Rápido
+[Topo](#manual-de-git--github-pratico-e-rápido) | [0. Ações rápidas](#0-ações-rápidas) | [1. O que é Git e GitHub](#1-o-que-é-git-e-github) | [2. Instalação do Git](#2-instalação-do-git) | [3. Configuração Inicial do Git](#3-configuração-inicial-do-git) | [4. Comandos do Git](#4-comandos-do-git) | [5. Comandos do Markdown](#5-comandos-do-markdown) | [6. Dicas úteis](#6-dicas-úteis)
 
 ## 0 Ações rápidas
     git config --global user.name "Seu Nome"
@@ -191,12 +191,16 @@ Markdown é uma linguagem de marcação simples que facilita a formatação de t
 
 
 ## 6. Dicas úteis
-    Crie um arquivo .gitignore para excluir arquivos ou pastas que você não quer versionar
+   - Crie um arquivo .gitignore para excluir arquivos ou pastas que você não quer versionar
         /node_modules
         *.log
 
-    existem três maneiras de obter a ajuda para qualquer um dos comandos Git
+    - existem três maneiras de obter a ajuda para qualquer um dos comandos Git
     git help {comando}
     git {comando} --help
     man git- {comando}
+    - Markdown : (Menu de links internos) para pegar o link, selecione no Readme.md o texto e no browse copia o # atÃ© o final
+     ``` [Bem vindo](#Bem-vind0....) ```
 
+
+[Topo](#manual-de-git--github-pratico-e-rápido) 
