@@ -4,11 +4,9 @@
 [Topo](#manual-de-git--github-pratico-e-rápido) | [1. O que é Git e GitHub?](#1-o-que-é-git-e-github) | [2. Instalação do Git](#2-instalação-do-git) | [3. Configuração Inicial do Git](#3-configuração-inicial-do-git) | [4. Comandos do Git](#4-comandos-do-git) | [5. Comandos do Markdown](#5-comandos-do-markdown) | [6. Dicas úteis](#6-dicas-úteis)
 
 ## 1. O que é Git e GitHub?
-
-### Links diversos
     Git: Um sistema de controle de versão distribuído que permite rastrear mudanças no código-fonte e colaborar com outras pessoas.
     GitHub: Uma plataforma baseada na web que hospeda repositórios Git, facilitando a colaboração e o compartilhamento de código.
-
+### Links diversos
 - [Comandos: comandosgit.github](https://comandosgit.github.io/)
 - [Manual original: Git SCM User Manual](https://git-scm.com/docs/user-manual.html)
 - [Manual Git em português produzido coletivamente](https://git-na-pratica.gitbooks.io/git-na-pratica/content/)
