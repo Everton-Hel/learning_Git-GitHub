@@ -2,6 +2,10 @@
 
 
 ## 0 Ações rápidas
+    git config --global user.name "Seu Nome"
+    git config --global user.email "seuemail@exemplo.com"
+    git remote add origin https://github.com/usuario/repo.git
+
     git init
     git add README.md | git add .
     git commit -a -m "first commit"
@@ -9,6 +13,20 @@
     git remote add origin https://github.com/usuario/repo.git
     git push -u origin main | git push
     git pull
+
+| **Comando Git**                  | **Funcionalidade**                                                  |
+|-----------------------------------|---------------------------------------------------------------------|
+| `git init`                        | Inicializa um novo repositório Git                                  |
+| `git clone [url]`                 | Clona um repositório remoto                                         |
+| `git status`                      | Verifica o estado dos arquivos no repositório                       |
+| `git add [arquivo]`               | Adiciona um arquivo ao estágio                                      |
+| `git commit -m "[mensagem]"`      | Cria um commit com as mudanças do estágio                           |
+| `git pull`                        | Baixa e mescla mudanças do repositório remoto                       |
+| `git push`                        | Envia mudanças para o repositório remoto                            |
+| `git checkout [branch]`           | Troca para uma branch específica                                    |
+| `git branch`                      | Lista as branches locais                                            |
+| `git merge [branch]`              | Mescla as mudanças de uma branch na branch atual                    |
+
 
 ## 1. O que é Git e GitHub?
     Git: Um sistema de controle de versão distribuído que permite rastrear mudanças no código-fonte e colaborar com outras pessoas.
@@ -25,21 +43,20 @@
     Iniciar o Git Bash na pasta do projeto ou entrar na pasta via comando CMD do prompt ou no VS
 
 ## 3. Configuração Inicial do Git
-    Após a instalação, configure seu nome e e-mail (obrigatórios para commit):
-        git config --global user.name "Seu Nome"
-        git config --global user.email "seuemail@exemplo.com"
 
-    Para verificar se a configuração foi bem-sucedida:
-        Git git config --list 
+| **Comando Git**                                  | **Funcionalidade**                                        |
+|--------------------------------------------------|-----------------------------------------------------------|
+| `git config --global --list`                     | Mostra todas as configurações globais do Git              |
+| `git config --global alias.[atalho] [comando]`   | Cria um atalho (alias) para um comando Git                |
+| `git config --global user.name "Seu-Nome-Aqui`   |configure seu nome (obrigatórios para commit)              |
+| `git config --global user.email "SeuEmailAqui`   |configure seu e-mail (obrigatórios para commit)            |
+|--------------------------------------------------|-----------------------------------------------------------|
+| `git remote add origin https://github.com/usuario/repo.git` | Conecta o repositório local a um repositório remoto no GitHub       |
+| `git remote -v`                                  | verifica o link existente                                 |
+| `git remote rm origin`                           | remove o link                                             |
 
-    Conectando ao Repo do GitHub
-        git remote add origin https://github.com/usuario/repo.git
-    verifica o link existente
-        git remote -v
-    remove o link
-        git remote rm origin
         
-## 4. Comandos Básicos do Git
+## 4. Comandos do Git
 ### Essa tabela organiza os principais comandos do Git e suas funcionalidades para referência rápida!
 
 | **Comando Git**                  | **Funcionalidade**                                                  |
@@ -66,7 +83,7 @@
 | `git tag -a [v1.0] -m "[msg]"`    | Cria uma tag anotada para marcar uma versão                         |
 | `git push origin --tags`          | Envia tags criadas para o repositório remoto                        |
 | `git rebase -i HEAD~[n]`          | Squash: combina vários commits em um só                             |
-|-----------------------------------|---------------------------------------------------------------------|
+
 
 ### Essa tabela complementa a anterior com comandos mais avançados e específicos, ampliando a funcionalidade para diferentes cenários no Git.
 
@@ -100,10 +117,78 @@
 | `git rev-parse [HEAD]`                                     | Exibe o hash completo do commit atual                             |
 | `git shortlog -s -n`                                       | Mostra o número de commits por autor                              |
 | `git diff [branch1] [branch2]`                             | Compara diferenças entre duas branches                            |
-|------------------------------------------------------------|-------------------------------------------------------------------|
+
+## . Comandos do Markdown
+### Essa tabela fornece os comandos mais comuns para formatação e estruturação de conteúdo em Markdown.
+Markdown é uma linguagem de marcação simples que facilita a formatação de texto. Usada em documentos e plataformas como GitHub, ela permite criar títulos, listas, links e formatações básicas com uma sintaxe fácil de ler e escrever.
+
+| **Comando Markdown**              | **Funcionalidade**                                             |
+|-----------------------------------|----------------------------------------------------------------|
+| `# Título`                        | Cria um título de nível 1 (equivalente a `<h1>`)               |
+| `## Subtítulo`                    | Cria um título de nível 2 (equivalente a `<h2>`)               |
+| `### Subsubtítulo`                | Cria um título de nível 3 (equivalente a `<h3>`)               |
+| `**texto em negrito**`            | Deixa o texto em **negrito**                                   |
+| `*texto em itálico*`              | Deixa o texto em *itálico*                                     |
+| `> citação`                       | Cria um bloco de citação                                       |
+| `- Item de lista`                 | Cria uma lista não ordenada (bullet points)                    |
+| `1. Item numerado`                | Cria uma lista ordenada                                        |
+| `[link](https://exemplo.com)`      | Cria um [link](https://exemplo.com)                            |
+| `![alt texto](imagem.png)`         | Insere uma imagem                                              |
+| `` `código` ``                    | Insere código inline                                           |
+| \`\`\`                            | Marca o início de um bloco de código                           |
+| \`\`\`                            | Marca o fim de um bloco de código                              |
+| `---`                             | Cria uma linha horizontal (divisória)                          |
+| `| Coluna 1 | Coluna 2 |`         | Cria uma tabela                                                |
+| `![Descrição](caminho/imagem.jpg)` | Insere uma imagem com descrição alternativa                    |
+| `- [ ] Tarefa`                    | Cria uma lista de tarefas                                      |
+| `- [x] Tarefa concluída`          | Marca uma tarefa como concluída                                |
+
+### Esses comandos complementam os anteriores e cobrem funcionalidades avançadas de Markdown, incluindo notas de rodapé, alinhamento em tabelas, e formatações especiais.
+
+| **Comando Markdown**                    | **Funcionalidade**                                                    |
+|-----------------------------------------|-----------------------------------------------------------------------|
+| `~~texto~~`                             | Aplica **tachado** no texto                                           |
+| `![alt text](url "Título da imagem")`   | Insere uma imagem com título ao passar o mouse sobre ela              |
+| `[texto do link][id]`                   | Cria um link de referência (usando identificadores no final do texto) |
+| `[id]: https://exemplo.com`             | Define a URL de referência para o link                                |
+| `\*caracter especial\*`                 | Escapa caracteres especiais (não interpreta como Markdown)            |
+| `| :--- | ---: | :---: |`              | Alinha o conteúdo da tabela: esquerda, direita, ou centralizado       |
+| `- [ ] Item de tarefa`                  | Cria uma lista de tarefas não marcadas                                |
+| `- [x] Item de tarefa concluída`        | Marca um item de tarefa como concluído                                |
+| `---`                                   | Cria uma linha horizontal (divisória)                                 |
+| `<br>`                                  | Quebra de linha manual                                               |
+| `[^1]`                                  | Cria uma nota de rodapé no texto                                      |
+| `[^1]: Texto da nota de rodapé`         | Define o conteúdo da nota de rodapé                                   |
+| `::emoji::`                             | Insere emojis (suporte depende da plataforma)                         |
+| `![Exemplo GIF](url.gif)`               | Insere um GIF animado                                                 |
+| `[![Texto Alt](imagem.png)](url)`       | Insere uma imagem que funciona como link                              |
+| `<mark>texto</mark>`                    | Marca o texto com cor de destaque (suporte depende da plataforma)     |
+| `<sub>texto</sub>`                      | Formata texto como subscrito                                          |
+| `<sup>texto</sup>`                      | Formata texto como sobrescrito                                        |
+
+### Comandos adicionais (variantes ou extensões do Markdown):
+| **Comando Markdown**                 | **Funcionalidade**                                                              |
+|--------------------------------------|---------------------------------------------------------------------------------|
+| `<u>texto</u>`                       | Sublinha o texto (suporte depende da plataforma)                                |
+| `<kbd>Ctrl+C</kbd>`                  | Exibe um texto formatado como tecla (útil para atalhos de teclado)              |
+| `<details><summary>Texto</summary>Conteúdo</details>` | Cria uma seção que pode ser expandida ourecolhida              |
+| `==texto==`                          | Realça texto com uma cor de destaque (varia por plataforma)                     |
+| `:emoji:`                            | Insere emojis por atalho de texto (suporte depende da plataforma)               |
+| `<abbr title="exemplo">txt</abbr>`   | Cria uma abreviação com uma dica ao passar o mouse sobre o texto                |
+| `<!–– comentário ––>`                | Insere um comentário invisível no Markdown                                      |
+| `\LaTeX{fórmula}`                    | Insere fórmulas matemáticas usando sintaxe LaTeX (suporte em algumas plataformas)|
+| `<iframe src="url"></iframe>`        | Insere um iframe para incorporar conteúdo de outros sites (suporte limitado)    |
+| `<audio controls><source src="audio.mp3"></audio>` | Insere um player de áudio (suporte limitado)                      |
+| `<video controls><source src="video.mp4"></video>` | Insere um player de vídeo (suporte limitado)                      |
+| `<blockquote>`                       | Adiciona citações com formatação HTML                                           |
+| `<table><tr><th>Header</th></tr></table>` | Cria tabelas mais personalizadas usando HTML                               |
+| `[toc]`                              | Gera automaticamente um sumário com base nos títulos do documento (varia por plataforma) |
+| `{#id}`                              | Adiciona um id a um título ou elemento para referência direta (Markdown estendido) |
+| `@usuário`                           | Menciona um usuário (suporte comum em plataformas como GitHub)                  |
+| `<script>` ou `<style>`              | Adiciona scripts ou estilos CSS (geralmente não permitido por razões de segurança) |
 
 
-## 5. Dicas úteis
+## 6. Dicas úteis
     Crie um arquivo .gitignore para excluir arquivos ou pastas que você não quer versionar
         /node_modules
         *.log
