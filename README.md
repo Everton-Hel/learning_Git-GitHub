@@ -1,5 +1,7 @@
 # Manual de Git + GitHub (Pratico e Rápido)
 
+### Menu Rapido
+[Topo](#manual-de-git--github-pratico-e-rápido) | [0. Ações rápidas](#0-ações-rápidas) | [1. O que é Git e GitHub](#1-o-que-é-git-e-github) | [2. Instalação do Git](#2-instalação-do-git) | [3. Configuração Inicial do Git](#3-configuração-inicial-do-git) | [4. Comandos do Git](#4-comandos-do-git) | [5. Comandos do Markdown](5-comandos-do-markdown) | [6. Dicas úteis](#6-dicas-úteis)
 
 ## 0 Ações rápidas
     git config --global user.name "Seu Nome"
@@ -33,10 +35,10 @@
     GitHub: Uma plataforma baseada na web que hospeda repositórios Git, facilitando a colaboração e o compartilhamento de código.
     
     Links diversos
-    Comandos: https://comandosgit.github.io/
-    Manual original: https://git-scm.com/docs/user-manual.html
-    Manual git em português produzido coletivamente: https://git-na-pratica.gitbooks.io/git-na-pratica/content/
-    Formatação padrão Markdown (http://daringfireball.net/projects/markdown/syntax);
+    [Comandos: https://comandosgit.github.io/] (https://comandosgit.github.io/)
+    [Manual original: (https://git-scm.com/docs/user-manual.html)](https://git-scm.com/docs/user-manual.html)
+    [Manual git em português produzido coletivamente: (https://git-na-pratica.gitbooks.io/git-na-pratica/content/)](https://git-na-pratica.gitbooks.io/git-na-pratica/content/)
+    [Formatação padrão Markdown (http://daringfireball.net/projects/markdown/syntax)](http://daringfireball.net/projects/markdown/syntax)
 
 ## 2. Instalação do Git
     Windows: Baixe o Git em git-scm.com e siga as instruções de instalação.
@@ -118,7 +120,7 @@
 | `git shortlog -s -n`                                       | Mostra o número de commits por autor                              |
 | `git diff [branch1] [branch2]`                             | Compara diferenças entre duas branches                            |
 
-## . Comandos do Markdown
+## 5. Comandos do Markdown
 ### Essa tabela fornece os comandos mais comuns para formatação e estruturação de conteúdo em Markdown.
 Markdown é uma linguagem de marcação simples que facilita a formatação de texto. Usada em documentos e plataformas como GitHub, ela permite criar títulos, listas, links e formatações básicas com uma sintaxe fácil de ler e escrever.
 
